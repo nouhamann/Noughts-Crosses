@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.grid{
+    width: 300px;
+    height: 300px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,auto);
+    margin: auto;
+}
+.grid div{
+    height: 100px;
+    width: 100px;
+    border: 3px solid;
+}
+.grid div:first-child,
+.grid div:nth-child(2),
+.grid div:nth-child(3){
+    border-top: none;
+}
+.grid div:first-child,
+.grid div:nth-child(4),
+.grid div:nth-child(7){
+    border-left: none;
+}
+.grid div:nth-child(9),
+.grid div:nth-child(3),
+.grid div:nth-child(6){
+    border-right: none;
+}
+.grid div:nth-child(7),
+.grid div:nth-child(8),
+.grid div:nth-child(9){
+    border-bottom: none;
+}
+.nought{
+    background-image: url(/Noughts&Crosses/nought.jpeg);
+    background-size: contain;
+    
+}
+.cross{
+    background-image: url(/Noughts&Crosses/cross.jpeg);
+    background-size: contain;
+    
+}
+h2{
+    text-align: center;
+}
+#playAgain{
+    display: block;
+    margin: auto;
+}
